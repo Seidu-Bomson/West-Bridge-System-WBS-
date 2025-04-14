@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - WBS</title>
+  <link rel="stylesheet" href="style1.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <nav class="nav-bar" id="mainNav">
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="service-list">
+    <h2>What We Offer</h2>
+    <ul>
+      <li>Computer Maintenance</li>
+      <li>Camera Installation</li>
+      <li>Network Installation</li>
+      <li>GPS Tracker Installation</li>
+      <li>Web Development</li>
+    </ul>
+  </section>
+
+  <section class="quote-form">
+    <h2>Request a Quote</h2>
+    <form id="quoteForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="service">Service:</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="Computer Maintenance">Computer Maintenance</option>
+        <option value="Camera Installation">Camera Installation</option>
+        <option value="Network Installation">Network Installation</option>
+        <option value="GPS Tracker Installation">GPS Tracker Installation</option>
+        <option value="Web Development">Web Development</option>
+      </select>
+      <button class="submit" type="submit">Submit</button>
+    </form>
+  </section>
+  <footer class="footer-container">
+    <div class="foot">
+        <p>&copy; 2025 West Bridge System. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    document.getElementById('quoteForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const service = document.getElementById('service').value;
+      
+        if (!name || !email || !service) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+      
+        alert('Quote request submitted successfully!');
+        this.reset();
+      });
+      
+      const navToggle = document.getElementById('navToggle');
+      const mainNav = document.getElementById('mainNav');
+      navToggle?.addEventListener('click', () => {
+        mainNav.querySelector('ul').classList.toggle('show');
+      });
+  </script>
+</body>
+</html>

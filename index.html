@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West Bridge System (WBS)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header-container">
+    <nav class="main-nav">
+      <div class="logo">
+        <h1 class="logo-title">WBS</h1>     
+        <div class="logo-img">
+        <!-- <img src="images/logo.png" alt="Logo" /> -->
+        <img src="images/wbs-log.jpg" alt="WBS-Logo" />
+      </div>
+        </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="#contact-info">Contact</a></li>
+        <li class="login"><a href="quote.html">Login</a></li>
+        <li class="signup"><a href="quote.html">Sign Up</a></li>
+        </ul>
+        
+      <div class="icon">
+        <a href="javascript:void(0);" onclick="toggleMenu()">
+            <i class="toggle fa fa-close"></i>
+            <br>
+          <i class=" close fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="wbs-header">
+      <h1>Welcome to West Bridge System (WBS)</h1>
+      <hr>
+      <p>
+        Your partner in innovative solutions.<br />
+        <span>Providing top-notch services to elevate your business.</span><br />
+        <a href="#services" class="explore-btn">Explore Our Services</a>
+      </p>
+      <div class="search-bar">
+        <i>
+        <input class="input1" type="search" placeholder="search" class="" id="search">
+        <input class="input2" type="button" value="Go" onclick="search(document.getElementById('search').value)">
+        </i>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+          West Bridge System (WBS) is dedicated to providing top-notch solutions for your business needs. Our team of
+          experts is committed to delivering excellence in every project we undertake.
+          <span style="font-weight: 600;">We prioritize customer satisfaction and innovative approaches.</span>
+          
+        </p>
+      </div>
+    </section>
+
+    <section class="services-container" id="services">
+      <div class=" our-service">
+        <h2>Our Services</h2>
+        <p>
+          At West Bridge System, we offer a comprehensive range of services to meet the diverse needs of our clients.
+            Our team of experts is dedicated to delivering high-quality solutions tailored to your specific requirements.
+            <br />
+        </p>
+        <ul class="our-work">
+          <li>Camera Installations</li>
+          <li>Software Development</li>
+          <li>Computer Repairs</li>
+          <li>Network Installation</li>
+          <li>Web Development</li>
+          <li>GPS Tracker Installation</li>
+        </ul>
+        <!-- <a href="#about" class="learn-more-btn">Learn More</a> -->
+      </div>
+      <!-- camera section-->
+        <div class="cameras-install">
+          <h2>Camera Installations</h2>
+          <p>
+            We specialize in camera installations to enhance your security and surveillance systems.
+            Our team ensures that your cameras are installed correctly and efficiently, providing you with peace of mind.
+            Our camera installation services include a wide range of options to suit your specific needs, whether for residential, commercial, or industrial purposes. We use the latest technology to ensure high-quality video surveillance and reliable performance. 
+            Our team provides expert advice on camera placement, system configuration, and maintenance to maximize the effectiveness of your security setup. Trust WBS to deliver solutions that keep your property safe and secure.
+          </p>
+          <div class="cameras-side">
+          <!-- <img class="camera-1" style="width: 200px;" src="images/camera-1.jpg" alt="Camera Installation" /> -->
+          <img class="camera-2" style="height: 200px;" src="images/camera-2.jpg" alt="camera">
+          <img class="camera-3" style="height: 200px;" src="images/camera-1.jpg" alt="camera">
+          <img class="camera-3" style="height: 200px;" src="images/camera-3.jpg" alt="camera">
+          <img class="camera-3" style="height: 200px;" src="images/camera-4.jpg" alt="camera">
+
+          </div>  
+      </div>
+
+        <div class="computer-repairs">
+          <h3>Computer Repairs</h3>
+          <p>
+            Our support and maintenance services ensure that your systems run smoothly and efficiently.
+            We offer quick and reliable repairs for all types of computer issues, from hardware to software problems.
+            Our team of experts is here to help you get back on track as quickly as possible.
+          </p>
+          <div>
+              <img src="images/comp repair1.jpg" 
+              alt="Computer Repairs" />
+              <img src="images/comp repair2.jpg" 
+              alt="Computer Repairs" />
+              <img src="images/comp repair3.jpg" 
+              alt="Computer Repairs" /> 
+          </div>
+        </div>
+
+        <div class="network-side">
+          <h3>Network Installation</h3>
+          <p>
+            We provide robust and reliable network infrastructure—from design to implementation.
+            Our team ensures that your network is secure, efficient, and tailored to your business needs.
+            We also offer ongoing support and maintenance to keep your network running smoothly.
+            Whether you need a simple home network or a complex enterprise solution, we have the expertise to deliver.
+            <br />
+            Our team of experts is dedicated to delivering high-quality solutions tailored to your specific requirements.
+          </p>
+          <div class="network-side-images">
+            <img src="images/network-2.jpg" alt="Software Development" />
+            <img src="images/network-1.jpg" alt="network-install" />
+            <img src="images/network2.jpg" alt="network-install" />
+          </div>
+        </div>
+
+        <div class="web-dev">
+          <h3>Web Development</h3>
+          <p>
+            We help you create a professional and user-friendly website to represent your brand online.
+            Our web development services include responsive design, e-commerce solutions, and content management systems.
+            We work closely with you to understand your goals and deliver a website that meets your needs.
+          </p>
+          <div class="web-images">
+            <img src="images/web1.jpg" alt="Web Development" />
+            <img src="images/web2.jpg" alt="Web Development" />
+            <img src="images/web3.jpg" alt="Web Development" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="call-to-action">
+    <div class="cta-container">
+      <h2>Ready to Elevate Your Business?</h2>
+      <p>Contact us today to learn more about our services and how we can help you achieve your goals.</p>
+      <a href="#contact-info" class="cta-btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="foot-container">
+    <ul class="service-footer">
+      <h3>Our Services</h3>
+      <li>Camera Installation</li>
+      <li>Computer Repairs</li>
+      <li>Network Installation</li>
+      <li>Web Development</li>
+      <li>GPS Tracker Installation</li>
+    </ul>
+
+    <ul class="ceo">
+      <h3>The CEO</h3>
+      <li><span>Bayari Suraj</span></li>
+      <img src="images/CEO.jpg" alt="The CEO" />
+    </ul>
+
+    <ul class="connect-with-us">
+      <h3>Connect with us on:</h3>
+      <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
+      <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
+      <li><a href="#" class="fa fa-twitter"> Twitter</a></li>
+      <li><a href="#" class="fa fa-whatsapp"> WhatsApp</a></li>
+    </ul>
+
+    <div class="contact-info" id="contact-info">
+      <h3>Contact Information</h3>
+      <ul>
+        <li>Email: <a href="mailto:surajbayari5@gmail.com">surajbayari5@gmail.com</a></li>
+        <li>Phone: <a href="tel:0240757078">0240757078</a></li>
+        <li>
+          <i>Location:  <a href="home" class=" fa fa-map ">  Pulima</a></i>
+        </li>
+      </ul>
+    </div>
+
+    <p>&copy; 2025 West Bridge System. All rights reserved.</p>
+    <div class="totop">
+      <a href="index.html">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle responsive navigation
+    function toggleMenu() {
+      var x = document.querySelector(".nav-links");
+      x.classList.toggle("responsive");
+        var icon = document.querySelector(".icon a i.fa-bars");
+        var iconClose = document.querySelector(".icon a i.fa-close");
+        if (x.classList.contains("responsive")) {
+            icon.style.display = "none";
+            iconClose.style.display = "block";
+        }else {
+            icon.style.display = "block";
+            iconClose.style.display = "none";
+        }
+        
+
+
+    }
+    function search(string){
+      window.find(string);
+      }
+  </script>
+</body>
+</html>
