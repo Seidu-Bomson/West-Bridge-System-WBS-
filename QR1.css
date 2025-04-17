@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  .top-right {
+    margin-left: auto;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .error {
+    animation: shake 0.1s linear 10;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  #imgBox {
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+  }
+  
+  footer.foot-container {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .foot-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .foot-container li {
+    margin: 5px 0;
+  }
+  
+  .foot-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .foot-container a:hover {
+    text-decoration: underline;
+  }
+  
+  span {
+    font-weight: bold;
+    color: #333;
+  }
+
+  
